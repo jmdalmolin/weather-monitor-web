@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html{
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: Roboto,Arial,Helvetica,Sans-serif;
+}
+
+header, footer{
+    overflow: auto;
+    width: 100%;
+    background-color: cornflowerblue;
+    padding: 1% 5%;
+}
+h1 {
+    display: inline;
+}
+
+i {
+    color: white;
+    float: right;
+    font-size: 2em !important;
+}
+
+i.spin {
+    -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+main{
+      width: 100%;
+      background-color: lightblue;
+}
+
+header h1, footer p{
+    color: whitesmoke;
+}
+
+footer p{
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    background: white;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightgray !important;
+}
+
+td, th {
+    background: white;
+    color: darkslategray;
+    text-align: center;
+    padding: 1%;
+}
+
+#cadastro_estacoes{
+    width: 90%;
+    margin: auto;
+    background: white;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+#cadastro_estacoes span{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+}
+
+#cadastro_estacoes label{
+    width: 33%;
+    display: inline-table;
+}
+#cadastro_estacoes input{
+    width: 100%;
+}
+#cadastro_estacoes .campos{
+    width: 100%;
+}
+#cadastro_estacoes .geo{
+    width: 49.6%;
+}
+
+#cadastro_estacoes input, #cadastro_estacoes textarea{
+    border: solid 1px gray;
+}
+
+#cadastro_estacoes textarea{
+    width: 100%;
+}
+#cadastro_estacoes input, #cadastro_estacoes label{
+    height: 30px
+}
+#cadastro_estacoes button {
+    display: inline-table;
+    width: 25%;
+    margin: 10px;
+    height: 30px
+}

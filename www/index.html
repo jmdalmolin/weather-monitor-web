@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Monitor</title>
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Weather Monitor</h1>
+    <i class="fa fa-circle-o-notch spin" aria-hidden="true"></i>
+</header>
+<main>
+    <div id="cadastro_estacoes">
+        <span>Cadastro de Estacoes</span><br>
+        <label class="campos">Nome<input id="name"></label>
+        <label class="campos">Descricao<br><textarea id="description"></textarea></label>
+        <label class="geo">Latitude<input type="number" id="latitude"/></label>
+        <label class="geo">Longitude<input type="number" id="longitude"/></label>
+        <label class="sensor">Termometro<br><input id="thermometer"/></label>
+        <label class="sensor">Barometro<br><input id="barometer"/></label>
+        <label class="sensor">Higrometro<br><input id="hygrometer"/></label>
+        <label class="sensor">Anemometro<br><input id="anemometer"/></label>
+        <label class="sensor">Biruta<br><input id="windsock"/></label>
+        <label class="sensor">Pluviometro<br><input id="pluviometer"/></label>
+        <button>Salvar</button>
+        <button>Limpar</button>
+    </div>
+    <div id="lista_dados">
+        <table id="tabela_dados">
+            <tr id="thead">
+                <th>&nbsp;</th>
+                <th>Storage Date-Time</th>
+                <th>Station</th>
+                <th>Temperature</th>
+                <th>Relative Humidity</th>
+            </tr>
+            <tbody></tbody>
+        </table>
+    </div>
+</main>
+<footer>
+    <p>Developed by: Dalmolin</p>
+</footer>
+</body>
+<script src="lib/jquery-3.2.1.min.js"></script>
+<script src="script.js"></script>
+</html>
