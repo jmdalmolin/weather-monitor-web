@@ -53,23 +53,6 @@ footer p{
     text-align: center;
 }
 
-table {
-    width: 90%;
-    margin: auto;
-    background: white;
-    border-collapse: collapse;
-}
-
-th {
-    background-color: lightgray !important;
-}
-
-td, th {
-    background: white;
-    color: darkslategray;
-    text-align: center;
-    padding: 1%;
-}
 
 #cadastro_estacoes{
     width: 90%;
@@ -79,13 +62,23 @@ td, th {
     padding: 20px;
 }
 
-#cadastro_estacoes span{
+#titulo{
     width: 100%;
     text-align: center;
     font-weight: bold;
     display: block;
 }
 
+.titulo{
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+    display: block;
+    margin:auto;
+    height: 40px;
+    color: black;
+    background-color: white;
+}
 #cadastro_estacoes label{
     width: 33%;
     display: inline-table;
@@ -112,7 +105,82 @@ td, th {
 }
 #cadastro_estacoes button {
     display: inline-table;
-    width: 25%;
-    margin: 10px;
+    width: 20%;
+    margin: 2.5%;
+    height: 30px;
+}
+
+#response {
+    display: inline-table;
+    width: 45%;
+    margin: 2%;
+    height: 30px;
+}
+
+#lista_dados{
+    width: 100%;
+}
+
+#lista_dados > div{
+    height: 500px;
+    overflow-y: scroll;
+    width: 90%;
+    margin: auto;
+    background: white;
+}
+
+table {
+    width: 100%;
+    margin: auto;
+    background: white;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: lightgray !important;
+}
+
+td, th {
+    background: white;
+    color: darkslategray;
+    text-align: center;
+    padding: 1%;
+}
+
+#lista_estacoes{
+    width: 100%;
+}
+
+#lista_estacoes > div{
+    height: 500px;
+    overflow-y: scroll;
+    width: 90%;
+    margin: auto;
+    background: white;
+}
+
+#filtros label{
+    width: 33%;
+    display: inline-table;
+}
+#filtros input{
+    width: 100%;
+}
+
+
+#filtros{
+    width: 90%;
+    margin: auto;
+    background: white;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+
+#filtros input{
+    border: solid 1px gray;
+}
+
+#filtros input, #filtros label{
     height: 30px
 }

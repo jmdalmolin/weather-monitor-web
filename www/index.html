@@ -13,7 +13,7 @@
 </header>
 <main>
     <div id="cadastro_estacoes">
-        <span>Cadastro de Estacoes</span><br>
+        <span id="titulo">Cadastro de Estacoes</span><br>
         <label class="campos">Nome<input id="name"></label>
         <label class="campos">Descricao<br><textarea id="description"></textarea></label>
         <label class="geo">Latitude<input type="number" id="latitude"/></label>
@@ -24,20 +24,48 @@
         <label class="sensor">Anemometro<br><input id="anemometer"/></label>
         <label class="sensor">Biruta<br><input id="windsock"/></label>
         <label class="sensor">Pluviometro<br><input id="pluviometer"/></label>
-        <button>Salvar</button>
-        <button>Limpar</button>
+        <button onclick="sendStation()">Salvar</button>
+        <button onclick="clearStation()">Limpar</button>
+        <span id="response">&nbsp;</span>
+    </div>
+    <div id="lista_estacoes">
+        <span class="titulo"><br>Lista de Estacoes<br></span>
+        <div>
+            <table id="tabela_estacoes">
+                <tr id="thead_s">
+                    <th>Filtrar</th>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Descricao</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                </tr>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+    <div id="filtros">
+        <label class="sensor">Data-Hora Inicial<br><input id="horainicial"/></label>
+        <label class="sensor">Data-Hora Final<br><input id="horafinal"/></label>
     </div>
     <div id="lista_dados">
-        <table id="tabela_dados">
-            <tr id="thead">
-                <th>&nbsp;</th>
-                <th>Storage Date-Time</th>
-                <th>Station</th>
-                <th>Temperature</th>
-                <th>Relative Humidity</th>
-            </tr>
-            <tbody></tbody>
-        </table>
+        <span class="titulo"><br>Dados<br></span>
+        <div>
+            <table id="tabela_dados">
+                <tr id="thead_d">
+                    <th>ID</th>
+                    <th>Storage Date-Time</th>
+                    <th>Station</th>
+                    <th>Temperature</th>
+                    <th>Atmospheric Pressure</th>
+                    <th>Relative Humidity</th>
+                    <th>Wind Speed</th>
+                    <th>Wind Direction</th>
+                    <th>Precipitation</th>
+                </tr>
+                <tbody></tbody>
+            </table>
+        </div>
     </div>
 </main>
 <footer>
